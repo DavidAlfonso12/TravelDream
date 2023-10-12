@@ -331,10 +331,19 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     font-family: 'Dosis', sans-serif;
     font-size: 24px;}
 
-#Contacto button{
-        border: 0;
-        margin-top: 15px;
+#Contacto .lupa img{
+    border: 0;
+    margin-top: 15px;
+    width: 45px;
+    transition: .4s;
 }
+
+#Contacto .lupa img:hover{
+    background: #1fbfc2;
+    padding: 5px;
+    border-radius: 15px;
+}
+
 /* footer */
 
 footer{
