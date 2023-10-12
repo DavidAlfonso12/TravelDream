@@ -44,6 +44,16 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
 .login{
     margin-left: 190px;
     background: rgb(20, 206, 223);
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.login:hover{
+    background: #2c9fc6;
+}
+
+.login:hover a{
+    color: #fff !important;
 }
 
 .hero{
@@ -52,7 +62,7 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     background-size: cover;
     padding: 240px;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 .hero h1{
@@ -74,6 +84,7 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     width: 100%;
     position: relative;
     padding: 50px 0;
+    margin-bottom: 80px;
 }
 
 #motivate h2{
@@ -98,6 +109,11 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     transition: .5s;
 }
 
+#motivate .carousel-item{
+    margin-bottom: 25px;
+    box-shadow: 3px 3px 3px #888888;
+}
+
 #motivate .carousel-item::after{
     width: 100%;
     height: 100%;
@@ -106,7 +122,7 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     top: 0;
     left: 0;
     content: "";
-    background: rgba(255, 153, 0, 0.103);
+    background: #ff99001a;
     transition: .5s;
 }
 #motivate .carousel-item:hover h5{
@@ -120,7 +136,14 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
 }
 
 #motivate .carousel-item:hover::after{
-    background: rgba(66, 140, 252, 0.441);
+    background: rgba(105, 163, 245, 0.314);
+}
+
+#Servicios{
+    width: 100%;
+    position: relative;
+    padding: 170px 0;
+    background: #e9e9e9d6;
 }
 
 #Nosotros{
@@ -128,25 +151,27 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     position: relative;
     padding: 170px 0;
 }
+
 #Nosotros img{
-    width: 500px;
+    width: 80%;
     display: block;
-    max-width: 80%;
-    margin: 0 auto;   
+    margin: 0 auto 25px auto;
+
 }
 
 #Nosotros h1{
     color: #2396bd;
-    padding-top: 50px;
     font-size: 50px;
-    border-bottom: 2px solid rgb(255, 145, 0);
+    font-weight: 800;
+    border-bottom: 2px solid rgb(135, 135, 135);
     display: inline-block;
     margin-bottom: 60px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #Nosotros a{
     padding: 14px 40px;
-    background: #0b5eb2;
+    background: #1fbfc2;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
@@ -157,28 +182,32 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     transition: .5s;
 }
 
+#Nosotros p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
 #Nosotros a:hover{
-    background: #000;
-    border-radius: 20px;
+    background: #020480;
 }
 
 
 #Servicios{
     width: 100%;
     position: relative;
-    padding: 50px 0;
+    padding: 130px 0;
 }
 
 #Servicios h2{
-    color: #2396bd;
+    color: #000000;
     font-size: 36px;
-    border-bottom: 2px solid #2396bd;
     display: inline-block;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #Servicios h2 span{
-    font-size: 54px;
+    color: #34d3d6;
 }
 
 #Servicios .card-servicio{
@@ -188,53 +217,182 @@ nav .container .navbar-collapse ul li:not(.login) a:hover{
     margin-bottom: 30px;
 }
 
-#Servicios .card-servicio::after{
+#Servicios .row .infoPaquete{
+    padding: 25px;
+}
+#Servicios .row .infoPaquete h2{
+    color: #267bd0;
+    margin-bottom: 15px;
+}
+
+#Servicios .row img{
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px #888888;
+}
+#Servicios .row .infoPaquete p{
+    font-family: 'Dosis', sans-serif;
+}
+#Servicios .row .infoPaquete span{
+    color: #31afd8;
+}
+#Servicios .row{
+    justify-content: center;
+    text-align: left;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #90fade;
+}
+
+/* comentarios */
+#Comentarios{
     width: 100%;
-    height: 100%;
-    position: absolute;
+    position: relative;
+    padding: 10px 0;
+    background: #adf9f640;
+}
+
+#Comentarios span{
+    color:#2396bd ;
+}
+
+#Comentarios h2{
+    color: #000000;
+    font-size: 30px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#Comentarios .card-servicio{
+    position: relative;
     z-index: 1;
-    top: 0;
-    left: 0;
-    content: "";
-    background: rgba(0, 68, 255, 0.096);
-    transition: .5s;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
-#Servicios .card-servicio a{
-    color: #fff;
-    font-weight: 700;
-    font-size: 26px;
-    text-decoration: none;
-    position: absolute;
-    z-index: 9;
-    bottom: 40px;
-    left: 0;
-    max-width: 250px;
-    margin: 0 auto;
-    right: 0;
-    transition: .5s;
-    border-radius: 8px;
+#Comentarios .card-servicio .persona{
+    text-align: start;
 }
 
-#Servicios .card-servicio:hover a{
-    background: #fff;
-    color: #0b5eb2;
-    bottom: 28%;
+#Comentarios .row .infoPaquete{
+    padding: 25px;
+    text-align: center;
+}
+#Comentarios .row .infoPaquete h2{
+    color: #267bd0;
+    margin-bottom: 5px;
+    font-size: 20px;
 }
 
-#Servicios .card-servicio:hover::after{
-    background: rgba(0, 68, 255, 0.404);
+#Comentarios .row img{
+    border-radius: 7px;
+    box-shadow: 7px 7px 7px #888888;
+    max-height: 200px;
+    max-width: 50%;
+    border-radius: 50%;
 }
+#Comentarios .row span img{
+    border-radius: 0;
+    max-height: 25px;
+}
+
+#Comentarios .row .infoPaquete p{
+    font-family: 'Dosis', sans-serif;
+}
+#Comentarios .row .infoPaquete span{
+    color: #31afd8;
+}
+#Comentarios .row{
+    justify-content: center;
+    text-align: left;
+}
+
 
 #Contacto{
     width: 100%;
     position: relative;
     padding: 80px 0;
+    background: #e9e9e9d6;
+    text-align: center;
+}
+#Contacto h2{
+    color: #589eff;
+    font-size: 36px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#Contacto .row{
+    justify-content: center;
 }
 
+#Contacto label{
+    color: #595959;
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;}
+
+#Contacto button{
+        border: 0;
+        margin-top: 15px;
+}
+/* footer */
+
 footer{
-    background: #0b5eb2;
+    background: #242424;
     color: #fff;
-    padding: 40px;
     text-align: center;
+}
+
+footer .fila1{
+    background: #353535;
+    padding: 8px;
+}
+footer .fila1 p{
+    padding: 0;
+}
+footer span{
+    color: #4e4e4e;
+}
+footer .fila1 span{
+    color: #007ce1;
+    font-weight: 700;
+}
+footer .red img{
+    margin: 0 5px;
+    max-width: 25px;
+    position: relative;
+    top: -15px;
+}
+footer .row p{
+    margin: 0;
+}
+
+
+
+@media (max-width:768px) {
+    .hero{
+        display: none;
+    }
+    #motivate h2{
+        margin-top: 120px;
+    }
+    #Comentarios .card-servicio .persona {
+        text-align: center;
+    }
+    #Comentarios .row .infoPaquete{
+        text-align: center;
+    }
+}
+
+@media (max-width:995px){
+    #Nosotros .nosotro{
+        text-align: center;
+    }
+
+    #Nosotros .nosotro a{
+        margin: 55px auto;
+    }
+    footer .fila1{
+        justify-content: center;
+    }
 }
