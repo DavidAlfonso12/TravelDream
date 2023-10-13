@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelDream</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,7 +31,13 @@
                     <a class="nav-link" href="#Nosotros">Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link contacto" href="#Contacto">Vuelos</a>
+                    <a class="nav-link contacto" href="#vuela">Vuelos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link contacto" href="#Comentarios">Comentarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link contacto" href="#Contacto">Contacto</a>
                   </li>
                   <li class="nav-item login">
                     <a class="nav-link " href="#">Iniciar Sesión</a>
@@ -292,7 +299,7 @@
         </div>
     </section>
 
-    <section id="Contacto">
+    <section id="vuela">
       <div class="container">
           <div class="row">
               <div class="col-lg-6">
@@ -321,7 +328,7 @@
                       </div>
                     </div>
                   </div>
-                  <a href="#" class="lupa"><img src="img/lupa.png" alt="lupa"></a>
+                  <a href="#vuela" class="lupa"><img src="img/lupa.png" alt="lupa"></a>
                 </form>
             </div>
           </div>
@@ -401,6 +408,36 @@
           </div>
       </div>
   </section>
+
+  <section id="Contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Contactanos</h2>
+                <p>Sientete libre de contactarnos cuando quieras.<br> Te contestaremos lo mas pronto posible.</p>
+                <form>
+                    <div class="mb-3">
+                      <input type="text" placeholder="Nombre" class="form-control" id="nombres" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" placeholder="Email" class="form-control" id="email" aria-describedby="emailHelp">
+                      </div>
+                      <div class="mb-3">
+                        <input type="text" placeholder="Mensaje" class="form-control" id="email" aria-describedby="emailHelp">
+                      </div>
+                    <button type="submit" class="btn btn-primary">ENVIAR</button>
+                  </form>
+            </div>
+            <div class="col-lg-6 infoContacto">
+              <h2>info</h2>
+              <p><i class="bi bi-envelope"></i> travelDream@gmail.com</p>
+              <p><i class="bi bi-telephone"></i> 3001225234</p>
+              <p><i class="bi bi-building"></i> Cl. 15 # 32-41, Bogotá</p>
+              <p><i class="bi bi-clock"></i> L-V 7:00am - 6:00pm <br>  S-D 9:00am - 2:00pm</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- <section id="Blog"></section> -->
